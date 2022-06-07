@@ -48,6 +48,10 @@ button:hover {
   color: white;
 }
 
+.trybewarts-login {
+  display: flex;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -56,7 +60,7 @@ main {
   padding: 20px 0;
 }
 
-#logo {
+#trybewarts-forms-logo {
   width: 500px;
   height: 500px;
 }

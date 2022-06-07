@@ -91,18 +91,30 @@ main input , #house {
 
 #families , #contents {
   width: 50%;
+  margin: 15px 0;
 }
 
-#families div , #contents div {
+#families div {
   display: flex;
+  flex-direction: column;
 }
 
 #label-content {
   word-wrap: break-word;
 }
 
-#families div {
-  flex-direction: column;
+#contents label {
+  margin-right: 15px;
+}
+
+#contents input {
+  margin-right: 5px;
+}
+
+#rate-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 #text {

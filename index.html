@@ -10,15 +10,18 @@
 </head>
 
 <body>
+
   <header class="header">
     <img class="trybewarts-header-logo" src="./images/trybewarts-header-logo.svg" alt="">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
+
     <form class="trybewarts-login" action="" method="get">
       <input type="email" name="email" id="" placeholder="Email">
       <input type="password" name="password" id="" placeholder="Senha">
-      <button>Entrar</button>
+      <button id="login">Entrar</button>
     </form>
   </header>
+
   <main>
     <form id="evaluation-form" action="">
       <div class="user-name-info">
@@ -35,12 +38,11 @@
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
       </div>
-      <hr>
+
       <div class="user-more_info">
         <div id="families">
           <label for="" id="label-family">Qual sua família?</label>
           <div>
-
 
             <label for="frontend"><input type="radio" name="family" id="frontend" value="Frontend">Frontend</label>
             <label for="backend"><input type="radio" name="family" id="backend" value="Backend">Backend</label>
@@ -52,7 +54,6 @@
           <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           <div>
             <div>
-
               <label for="hofs"><input type="checkbox" name="" id="hofs" class="subject" value="HoFs">HoFs</label>
               <label for="jest"><input type="checkbox" name="" id="jest" class="subject" value="Jest">Jest</label>
               <label for="promises"><input type="checkbox" name="" id="promises" class="subject"
@@ -69,11 +70,8 @@
         </div>
       </div>
 
-      <hr>
-
       <div id="rate-content">
         <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
-
 
         <label for="one"><input type="radio" name="rate" id="one" value="1">1</label>
         <label for="two"><input type="radio" name="rate" id="two" value="2">2</label>
@@ -90,6 +88,7 @@
       <div id="text">
         <label for="" class="textarea">Deixe seu comentário:</label>
         <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+        <p id="counter">500</p>
       </div>
 
       <div id="agreement-checkbox">
@@ -106,7 +105,14 @@
 
   <footer>
     <h4>Direitos reservados à Trybewarts©</h4>
+    <p>
+      Coded by
+      <a href="https://github.com/wanlucas">Wan</a>,
+      <a href="https://github.com/lucasrodrigges">Lucas</a> &
+      <a href="https://github.com/miguel-inacio">Miguel</a>.
+    </p>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>

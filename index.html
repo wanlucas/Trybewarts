@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Trybewarts</title>
 </head>
+
 <body>
   <header class="header">
     <img class="trybewarts-header-logo" src="./images/trybewarts-header-logo.svg" alt="">
@@ -19,9 +21,38 @@
   </header>
   <main>
     <form id="evaluation-form" action="">
+      <div>
+        <input type="text" name="" id="input-name" placeholder="Nome">
+        <input type="text" name="" id="input-lastname" placeholder="Sobrenome">
+      </div>
+      <div>
+        <input type="email" name="" id="input-email" placeholder="Email">
+        <select id="house">
+          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+          <option value="Reactpuff" id="reactpull-house">Reactpuff</option>
+          <option value="Corvinode" id="corvinode-house">Corvinode</option>
+          <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>
+      </div>
+      <div>
 
+        <label for="" id="label-family">Qual sua família?</label>
+        <input type="radio" name="family" id="" value="Frontend">
+        <input type="radio" name="family" id="" value="Backend">
+        <input type="radio" name="family" id="" value="FullStack">
+
+        <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+        <input type="checkbox" name="" id="" class="subject" value="HoFs">
+        <input type="checkbox" name="" id="" class="subject" value="Jest">
+        <input type="checkbox" name="" id="" class="subject" value="Promises">
+        <input type="checkbox" name="" id="" class="subject" value="React">
+        <input type="checkbox" name="" id="" class="subject" value="SQL">
+        <input type="checkbox" name="" id="" class="subject" value="Python">
+
+      </div>
     </form>
   </main>
-  
+
 </body>
+
 </html>

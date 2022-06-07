@@ -6,12 +6,24 @@
 
 .header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  height: 30px;
   background: rgb(50, 167, 145);
 }
 
 .trybewarts-header-logo {
-  width: 500px;
-  height: 500px;
+  width: 30px;
+  height: 30px;
+}
+
+#trybewarts-header-title {
+  color: white;
+}
+
+main {
+  display: flex;
 }
 
 #evaluation-form {

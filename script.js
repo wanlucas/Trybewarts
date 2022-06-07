@@ -10,7 +10,10 @@ function validateLogin() {
 }
 
 function toggleButton() {
+  const btn = $('submit-btn');
 
+  if (this.checked) btn.disabled = false;
+  else btn.disabled = true;
 }
 
 function updateRemainingCharacters() {

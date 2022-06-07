@@ -1,7 +1,12 @@
 const $ = (id) => document.getElementById(id);
 
 function validateLogin() {
+  const email = $('email');
+  const password = $('password');
 
+  if(email.value === 'tryber@teste.com' && password.value === '123456') {
+    window.alert('Olá, Tryber!')
+  } else window.alert('Email ou senha inválidos.');
 }
 
 function toggleButton() {

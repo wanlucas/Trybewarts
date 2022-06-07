@@ -55,13 +55,56 @@ main {
 
 #evaluation-form {
   display: flex;
+  align-items: center;
   flex-direction: column;
   width: 675px;
 }
 
-main input {
+main input , #house {
   border: none;
-  padding: 8px;
+  padding: 10px;
   border-radius: 7px;
   margin: 5px 0;
+}
+
+.user-name-info , .user-email-house {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+.user-name-info input , .user-email-house input , #house {
+  width: 46%;
+}
+
+#house {
+  outline: none;
+  border: none;
+}
+
+.user-more_info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#families , #contents {
+  width: 50%;
+}
+
+#families div , #contents div {
+  display: flex;
+}
+
+#label-content {
+  word-wrap: break-word;
+}
+
+#families div {
+  flex-direction: column;
+}
+
+#families input , #contents input {
+  margin: 0 3px;
 }

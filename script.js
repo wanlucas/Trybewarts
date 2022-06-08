@@ -20,8 +20,23 @@ function updateRemainingCharacters() {
   $('counter').innerText = 500 - this.value.length;
 }
 
+function createCard(e) {
+  e.preventDefault();
+
+  const card = $('card-content');
+  const data = new FormData(this);
+
+  [...data].forEach((element) => {
+    const li = document.createElement('li');
+
+    li.innerText = `${element[0]}: ${element[1]}`;
+    card.appendChild(li);
+  });
+}
+
 window.onload = () => {
   $('login').onclick = validateLogin;
   $('agreement').onchange = toggleButton;
   $('textarea').oninput = updateRemainingCharacters;
+  $('evaluation-form').onsubmit = createCard;
 };

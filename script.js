@@ -1,4 +1,5 @@
 const $ = (id) => document.getElementById(id);
+const pth = (path) => document.querySelector(path);
 
 function validateLogin() {
   const email = $('email');
@@ -21,23 +22,23 @@ function updateRemainingCharacters() {
 }
 
 function fadeCard() {
+  const card = $('card');
+
   $('main').style.animation = 'hidden 1s forwards';
-  $('card').style.animation = 'fade 1s forwards';
+  card.style.visibility = 'visible';
+  card.style.animation = 'fade 1s forwards';
 }
 
 function createCard(e) {
   e.preventDefault();
-
-  const card = $('card-content');
-  const data = new FormData(this);
-
-  [...data].forEach((element) => {
-    const li = document.createElement('li');
-
-    li.innerText = `${element[0]}: ${element[1]}`;
-    card.appendChild(li);
-  });
   fadeCard();
+
+  [...new FormData(this)].forEach((data) => {
+    const element = pth(`#form-data #${data[0]}`);
+
+    if (!element.innerText.length) element.innerText += data[1];
+    else element.innerText += `, ${data[1]}`;
+  });
 }
 
 window.onload = () => {

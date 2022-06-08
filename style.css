@@ -87,13 +87,12 @@ main {
 @keyframes fade {
 
   from {
-    transform: translateY(100vh);
     opacity: 0;
+    transform: translateY(100vh);
   }
 
   to {
     opacity: 1;
-    visibility: visible;
     transform: translateY(0);
   }
 }
@@ -190,9 +189,24 @@ main input , #house {
   position: absolute;
   inset: 0;
   margin: auto;
-  width: 400px;
+  width: 300px;
   height: 400px;
   visibility: hidden;
+  text-align: center;
+  padding: 12px;
+  background: radial-gradient(rgb(240, 226, 169), rgb(202, 196, 140));
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4);
+}
+
+#card-logo {
+  width: 30%;
+}
+
+#form-data {
+  text-align: left;
+  font-size: 10px;
+  list-style: none;
+  color: black;
 }
 
 footer {

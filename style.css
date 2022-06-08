@@ -61,6 +61,7 @@ main {
 }
 
 #trybewarts-forms-logo {
+  transition: 0.5s;
   width: 500px;
   height: 500px;
 }
@@ -72,6 +73,29 @@ main {
   flex-direction: column;
   height: 100%;
   width: 675px;
+}
+
+@keyframes hidden {
+
+  to {
+    display: none;
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+
+  from {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 }
 
 main input , #house {
@@ -117,22 +141,10 @@ main input , #house {
   word-wrap: break-word;
 }
 
-#contents label {
-  margin-right: 15px;
-}
-
-#contents input {
-  margin-right: 5px;
-}
-
 #rate-content {
   display: flex;
   justify-content: space-between;
   width: 100%;
-}
-
-#rate-content input {
-  margin: 0 5px;
 }
 
 #text {
@@ -172,6 +184,15 @@ main input , #house {
   margin: 5px 0;
   border-radius: 7px;
   font-size: 15px;
+}
+
+#card {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  visibility: hidden;
 }
 
 footer {

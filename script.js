@@ -20,6 +20,11 @@ function updateRemainingCharacters() {
   $('counter').innerText = 500 - this.value.length;
 }
 
+function fadeCard() {
+  $('main').style.animation = 'hidden 1s forwards';
+  $('card').style.animation = 'fade 1s forwards';
+}
+
 function createCard(e) {
   e.preventDefault();
 
@@ -32,6 +37,7 @@ function createCard(e) {
     li.innerText = `${element[0]}: ${element[1]}`;
     card.appendChild(li);
   });
+  fadeCard();
 }
 
 window.onload = () => {

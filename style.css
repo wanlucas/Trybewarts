@@ -29,6 +29,7 @@ body {
   padding: 24px 10px;
   height: 5%;
   background: rgb(50, 167, 145);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 header input , header button {
@@ -89,6 +90,9 @@ main {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  background: rgba(250, 250, 250, 0.1);
+  border-radius: 5px;
+  padding: 20px;
   height: 100%;
   width: 675px;
 }

@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <img id="background" src="images/bg.png">
 
   <header class="header">
     <img class="trybewarts-header-logo" src="./images/trybewarts-header-logo.svg" alt="">
@@ -43,43 +44,39 @@
         <div id="families">
           <label for="" id="label-family">Qual sua família?</label>
           <div>
-            <label for="frontend" name="Família">
+            <label for="frontend" class="option">
               <input type="radio" name="family" id="frontend" value="Frontend">Frontend
             </label>
-            <label for="backend">
+            <label for="backend" class="option">
               <input type="radio" name="family" id="backend" value="Backend">Backend
             </label>
-            <label for="fullstack">
+            <label for="fullstack" class="option">
               <input type="radio" name="family" id="fullstack" value="FullStack">FullStack
             </label>
           </div>
         </div>
 
         <div id="contents">
+          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           <div>
-            <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-            <div>
-              <label for="hofs">
-                <input type="checkbox" name="contents" id="hofs" class="subject" value="HoFs">HoFs
-              </label>
-              <label for="jest">
-                <input type="checkbox" name="contents" id="jest" class="subject" value="Jest">Jest
-              </label>
-              <label for="promises">
-                <input type="checkbox" name="contents" id="promises" class="subject" value="Promises">Promises
-              </label>
-            </div>
-            <div>
-              <label for="react">
-                <input type="checkbox" name="contents" id="react" class="subject" value="React">React
-              </label>
-              <label for="sql">
-                <input type="checkbox" name="contents" id="sql" class="subject" value="SQL">SQL
-              </label>
-              <label for="python">
-                <input type="checkbox" name="contents" id="python" class="subject" value="Python">Python
-              </label>
-            </div>
+            <label for="hofs" class="option">
+              <input type="checkbox" name="contents" id="hofs" class="subject" value="HoFs">HoFs
+            </label>
+            <label for="jest" class="option">
+              <input type="checkbox" name="contents" id="jest" class="subject" value="Jest">Jest
+            </label>
+            <label for="promises" class="option">
+              <input type="checkbox" name="contents" id="promises" class="subject" value="Promises">Promises
+            </label>
+            <label for="react" class="option">
+              <input type="checkbox" name="contents" id="react" class="subject" value="React">React
+            </label>
+            <label for="sql" class="option">
+              <input type="checkbox" name="contents" id="sql" class="subject" value="SQL">SQL
+            </label>
+            <label for="python" class="option">
+              <input type="checkbox" name="contents" id="python" class="subject" value="Python">Python
+            </label>
           </div>
         </div>
       </div>
@@ -137,6 +134,16 @@
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo">
   </main>
 
+  <footer>
+    <h4>Direitos reservados à Trybewarts©</h4>
+    <p>
+      Coded by
+      <a href="https://github.com/wanlucas">Wan</a>,
+      <a href="https://github.com/lucasrodrigges">Lucas</a> &
+      <a href="https://github.com/miguel-inacio">Miguel</a>.
+    </p>
+  </footer>
+
   <section id="card">
     <img id="card-logo" src="images/trybewarts.svg">
     <ul id="form-data">
@@ -149,16 +156,6 @@
       <li>Observações: <span id="notes"></span></li>
     </ul>
   </section>
-
-  <footer>
-    <h4>Direitos reservados à Trybewarts©</h4>
-    <p>
-      Coded by
-      <a href="https://github.com/wanlucas">Wan</a>,
-      <a href="https://github.com/lucasrodrigges">Lucas</a> &
-      <a href="https://github.com/miguel-inacio">Miguel</a>.
-    </p>
-  </footer>
   <script src="script.js"></script>
 </body>
 

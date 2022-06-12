@@ -64,7 +64,8 @@ main {
   justify-content: center;
   align-items: center;
   height: 95%;
-  padding: 5% 0;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 #trybewarts-forms-logo {
@@ -133,6 +134,21 @@ main input , #house {
   margin: 0 10px;
 }
 
+label input {
+  display: none;
+}
+
+.option {
+  display: inline-block;
+  width: 100px;
+  margin: 3px 0;
+  margin-right: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  border-radius: 2px;
+  padding: 2px 0;
+}
+
 .user-name-info input , .user-email-house input , #house {
   width: 46%;
 }
@@ -164,6 +180,7 @@ main input , #house {
 
 #rate-content {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
 }
@@ -216,6 +233,7 @@ main input , #house {
   visibility: hidden;
   text-align: center;
   padding: 12px;
+  color: black;
   background: radial-gradient(rgb(240, 226, 169), rgb(202, 196, 140));
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4);
 }

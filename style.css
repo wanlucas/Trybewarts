@@ -199,9 +199,23 @@ input:hover + .option {
 
 #rate-content {
   display: flex;
+  user-select: none;
   align-items: center;
   justify-content: space-between;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1px;
   width: 100%;
+}
+
+#rate-content label {
+  padding: 5px 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+#rate-content input:checked + label , #rate-content label:hover:not( #label-rate ) {
+  color: rgb(240, 220, 134);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 #text {

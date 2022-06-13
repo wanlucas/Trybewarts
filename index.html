@@ -44,39 +44,37 @@
         <div id="families">
           <label for="" id="label-family">Qual sua família?</label>
           <div>
-            <label for="frontend" class="option">
-              <input type="radio" name="family" id="frontend" value="Frontend">Frontend
-            </label>
-            <label for="backend" class="option">
-              <input type="radio" name="family" id="backend" value="Backend">Backend
-            </label>
-            <label for="fullstack" class="option">
-              <input type="radio" name="family" id="fullstack" value="FullStack">FullStack
-            </label>
+            <input type="radio" name="family" id="frontend" value="Frontend">
+            <label for="frontend" class="option">Frontend</label>
+
+            <input type="radio" name="family" id="backend" value="Backend">
+            <label for="backend" class="option">Backend</label>
+
+            <input type="radio" name="family" id="fullstack" value="FullStack">
+            <label for="fullstack" class="option">FullStack</label>
           </div>
         </div>
 
         <div id="contents">
           <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           <div>
-            <label for="hofs" class="option">
-              <input type="checkbox" name="contents" id="hofs" class="subject" value="HoFs">HoFs
-            </label>
-            <label for="jest" class="option">
-              <input type="checkbox" name="contents" id="jest" class="subject" value="Jest">Jest
-            </label>
-            <label for="promises" class="option">
-              <input type="checkbox" name="contents" id="promises" class="subject" value="Promises">Promises
-            </label>
-            <label for="react" class="option">
-              <input type="checkbox" name="contents" id="react" class="subject" value="React">React
-            </label>
-            <label for="sql" class="option">
-              <input type="checkbox" name="contents" id="sql" class="subject" value="SQL">SQL
-            </label>
-            <label for="python" class="option">
-              <input type="checkbox" name="contents" id="python" class="subject" value="Python">Python
-            </label>
+            <input type="checkbox" name="contents" id="hofs" class="subject" value="HoFs">
+            <label for="hofs" class="option">HoFs</label>
+
+            <input type="checkbox" name="contents" id="jest" class="subject" value="Jest">
+            <label for="jest" class="option">Jest</label>
+
+            <input type="checkbox" name="contents" id="promises" class="subject" value="Promises">
+            <label for="promises" class="option">Promises</label>
+
+            <input type="checkbox" name="contents" id="react" class="subject" value="React">
+            <label for="react" class="option">React</label>
+
+            <input type="checkbox" name="contents" id="sql" class="subject" value="SQL">
+            <label for="sql" class="option">SQL</label>
+
+            <input type="checkbox" name="contents" id="python" class="subject" value="Python">
+            <label for="python" class="option">Python</label>
           </div>
         </div>
       </div>
@@ -84,36 +82,35 @@
       <div id="rate-content">
         <label id="label-rate">Como você avalia a Trybewarts?</label>
 
-        <label for="one">
-          <input type="radio" name="rate" id="one" value="1">1
-        </label>
-        <label for="two">
-          <input type="radio" name="rate" id="two" value="2">2
-        </label>
-        <label for="three">
-          <input type="radio" name="rate" id="three" value="3">3
-        </label>
-        <label for="four">
-          <input type="radio" name="rate" id="four" value="4">4
-        </label>
-        <label for="five">
-          <input type="radio" name="rate" id="five" value="5">5
-        </label>
-        <label for="six">
-          <input type="radio" name="rate" id="six" value="6">6
-        </label>
-        <label for="seven">
-          <input type="radio" name="rate" id="seven" value="7">7
-        </label>
-        <label for="eight">
-          <input type="radio" name="rate" id="eight" value="8">8
-        </label>
-        <label for="nine">
-          <input type="radio" name="rate" id="nine" value="9">9
-        </label>
-        <label for="ten">
-          <input type="radio" name="rate" id="ten" value="10">10
-        </label>
+        <input type="radio" name="rate" id="one" value="1">
+        <label for="one">1</label>
+        
+        <input type="radio" name="rate" id="two" value="2">
+        <label for="two">2</label>
+
+        <input type="radio" name="rate" id="three" value="3">
+        <label for="three">3</label>
+
+        <input type="radio" name="rate" id="four" value="4">
+        <label for="four">4</label>
+
+        <input type="radio" name="rate" id="five" value="5">
+        <label for="five">5</label>
+
+        <input type="radio" name="rate" id="six" value="6">
+        <label for="six">6</label>
+
+        <input type="radio" name="rate" id="seven" value="7">
+        <label for="seven">7</label>
+
+        <input type="radio" name="rate" id="eight" value="8">
+        <label for="eight">8</label>
+
+        <input type="radio" name="rate" id="nine" value="9">
+        <label for="nine">9</label>
+
+        <input type="radio" name="rate" id="ten" value="10">
+        <label for="ten">10</label>
       </div>
 
       <div id="text">
@@ -135,7 +132,7 @@
   </main>
 
   <footer>
-    <h4>Direitos reservados à Trybewarts©</h4>
+    <h3>Direitos reservados à Trybewarts©</h3>
     <p>
       Coded by
       <a href="https://github.com/wanlucas">Wan</a>,
@@ -146,6 +143,9 @@
 
   <section id="card">
     <img id="card-logo" src="images/trybewarts.svg">
+    <h2 id="card-tytle">ESCOLA <span>de</span> MAGIA <br>
+    <span>e</span> BRUXARIA <span>de</span> TRYBEWARTS</h2>
+
     <ul id="form-data">
       <li>Nome: <span id="name"></span> <span id="lastname"></span></li>
       <li>Email: <span id="email"></span></li>
@@ -155,6 +155,18 @@
       <li>Avaliação: <span id="rate"></span></li>
       <li>Observações: <span id="notes"></span></li>
     </ul>
+
+    <p id="card-text">
+      Prezado <span id="name"></span>, <br>
+
+      temos o prazer de informar de você foi aceito na escola de magia e bruxaria de Trybewarts. <br>
+      atenciosamente, Minerva McGonagall.
+    </p>
+
+    <p class="card-footer">
+      Escola de magia de bruxaria de Trybewarts <br>
+      diretor: Albus Dumbledore.
+    </p>
   </section>
   <script src="script.js"></script>
 </body>

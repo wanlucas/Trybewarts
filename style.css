@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Amatic+SC:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(117, 40, 204, 0.493), black 40%);
+  overflow: hidden;
+  color: white;
+}
+
+#background {
+  width: 100%;
+  top: 20%;
+  z-index: -2;
+  opacity: 0.3;
+  position: absolute;
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 10px;
+  height: 5%;
+  background: rgb(50, 167, 145);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+header input , header button {
+  outline: none;
+  border: none;
+  width: 32%;
+  margin-right: 4px;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+header button {
+  background: rgb(117, 40, 204);
+}
+
+button:hover {
+  transition: 0.4s;
+  filter: brightness(1.3);
+}
+
+.trybewarts-header-logo {
+  width: 35px;
+  height: 35px;
+  margin-right: 6px;
+}
+
+.trybewarts-login {
+  display: flex;
+  justify-content: space-around;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+#trybewarts-forms-logo {
+  transition: 0.5s;
+  width: 500px;
+  height: 500px;
+  animation: float 2s infinite alternate-reverse cubic-bezier(0.38, 0.54, 0.58, 1);
+}
+
+@keyframes float {
+
+  from {
+    transform: translateY(1%);
+  }
+
+  to {
+    transform: translateY(-1%);
+  }
+}
+
+#evaluation-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background: rgba(250, 250, 250, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  height: 100%;
+  width: 675px;
+}
+
+@keyframes hidden {
+
+  to {
+    display: none;
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+
+  from {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(360deg);
+  }
+}
+
+main input , #house {
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  margin: 5px 0;
+}
+
+.user-name-info , .user-email-house {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+.user-name-info input , .user-email-house input {
+  outline: none;
+  border: 1px solid rgba(117, 40, 204, 0.5);
+}
+
+.user-name-info input , .user-email-house input , #house {
+  width: 46%;
+}
+
+#contents input , #families input , #rate-content input {
+  display: none;
+}
+
+.option {
+  display: inline-block;
+  user-select: none;
+  cursor: pointer;
+  width: 100px;
+  margin: 3px 0;
+  text-align: center;
+  margin-right: 3px;
+  padding: 2px 0;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-style: none solid solid none;
+}
+
+input:hover + .option {
+  transition: 0.2s;
+  transform: scale(1.05);
+}
+
+#contents input:checked + .option {
+  transition: 0.3s;
+  background: rgba(117, 40, 204, 0.6);
+}
+
+#families input:checked + .option {
+  transition: 0.3s;
+  background: rgba(50, 167, 146, 0.6);
+}
+
+#house {
+  outline: none;
+  border: none;
+}
+
+.user-more_info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#families , #contents {
+  width: 50%;
+  margin: 15px 0;
+}
+
+#families div {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-content {
+  word-wrap: break-word;
+}
+
+#rate-content {
+  display: flex;
+  user-select: none;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1px;
+  width: 100%;
+}
+
+#rate-content label {
+  padding: 5px 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+#rate-content input:checked + label , #rate-content label:hover:not( #label-rate ) {
+  color: rgb(240, 220, 134);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#text {
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+#text textarea {
+  width: 100%;
+  height: 80%;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(117, 40, 204, 0.5);
+  outline: none;
+  resize: none;
+}
+
+
+#counter {
+  position: absolute;
+  right: 3%;
+  bottom: 10px;
+  color: black;
+}
+
+#agreement-checkbox {
+  width: 100%;
+  text-align: left;
+  margin: 10px 0;
+}
+
+#agreement-checkbox div {
+  display: flex;
+  align-items: center;
+}
+
+#label-infos {
+  margin-right: 6px;
+}
+
+#agreement-checkbox button {
+  width: 100%;
+  padding: 10px 5px;
+  border: none;
+  background: rgb(117, 40, 204);
+  color: white;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+#letter {
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  font-family: Acme, sans-serif;
+  margin: auto;
+  width: 300px;
+  height: 400px;
+  visibility: hidden;
+  padding: 12px;
+  color: black;
+  background: radial-gradient(rgb(240, 226, 169), rgb(177, 170, 110));
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4);
+}
+
+#letter-logo {
+  width: 30%;
+}
+
+#form-data {
+  text-align: left;
+  font-size: 12px;
+  list-style: none;
+  margin: 10px 0;
+}
+
+#letter-title {
+  font-family: Amatic SC, cursive;
+  font-size: 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#letter-title span {
+  font-size: 10px;
+}
+
+#letter-text {
+  font-size: 10px;
+  text-align: left;
+}
+
+.letter-footer {
+  position: absolute;
+  text-align: left;
+  bottom: 12px;
+  font-size: 8px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: gray;
+  padding: 2px;
+  font-size: 12px;
+}
+
+footer p {
+  margin: 0 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(117, 40, 204);
+}
+
+@media only screen and ( max-width : 880px ) {
+
+  #trybewarts-forms-logo {
+    display: none;
+  }
+}
+
+@media only screen and ( max-width : 660px ) {
+
+  #trybewarts-header-title , #label-rate {
+    display: none;
+  }
+}
+
+@media only screen and ( max-width : 500px ) {
+
+  #contents div , #families div {
+    text-align: center;
+    align-items: center;
+  }
+
+  #families div label {
+    width: 80%;
+    margin: 3px 0;
+  }
+
+  #contents div > label {
+    width: 40%;
+    margin: 3px 0;
+  }
+
+  #text {
+    height: 80px;
+  }
+
+  main {
+    height: 100%;
+  }
+
+  #label-content , #label-family , footer {
+    display: none;
+  }
+}

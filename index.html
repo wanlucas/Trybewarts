@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Trybewarts</title>
+</head>
+
+<body>
+  <img id="background" src="images/bg.png">
+
+  <header class="header">
+    <img class="trybewarts-header-logo" src="./images/trybewarts-header-logo.svg" alt="">
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+
+    <form class="trybewarts-login" action="" method="get">
+      <input type="email" name="email" id="email" placeholder="Email">
+      <input type="password" name="password" id="password" placeholder="Senha">
+      <button id="login">Entrar</button>
+    </form>
+  </header>
+
+  <main id="main">
+    <form id="evaluation-form" action="get">
+      <div class="user-name-info">
+        <input type="text" name="name" id="input-name" placeholder="Nome">
+        <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome">
+      </div>
+      <div class="user-email-house">
+        <input type="email" name="email" id="input-email" placeholder="Email">
+
+        <select id="house" name="home">
+          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+          <option value="Corvinode" id="corvinode-house">Corvinode</option>
+          <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>
+      </div>
+
+      <div class="user-more_info">
+        <div id="families">
+          <label id="label-family">Qual sua família?</label>
+          <div>
+            <input type="radio" name="family" id="frontend" value="Frontend">
+            <label for="frontend" class="option">Frontend</label>
+
+            <input type="radio" name="family" id="backend" value="Backend">
+            <label for="backend" class="option">Backend</label>
+
+            <input type="radio" name="family" id="fullstack" value="FullStack">
+            <label for="fullstack" class="option">FullStack</label>
+          </div>
+        </div>
+
+        <div id="contents">
+          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div>
+            <input type="checkbox" name="contents" id="hofs" class="subject" value="HoFs">
+            <label for="hofs" class="option">HoFs</label>
+
+            <input type="checkbox" name="contents" id="jest" class="subject" value="Jest">
+            <label for="jest" class="option">Jest</label>
+
+            <input type="checkbox" name="contents" id="promises" class="subject" value="Promises">
+            <label for="promises" class="option">Promises</label>
+
+            <input type="checkbox" name="contents" id="react" class="subject" value="React">
+            <label for="react" class="option">React</label>
+
+            <input type="checkbox" name="contents" id="sql" class="subject" value="SQL">
+            <label for="sql" class="option">SQL</label>
+
+            <input type="checkbox" name="contents" id="python" class="subject" value="Python">
+            <label for="python" class="option">Python</label>
+          </div>
+        </div>
+      </div>
+
+      <div id="rate-content">
+        <label id="label-rate">Como você avalia a Trybewarts?</label>
+
+        <input type="radio" name="rate" id="one" value="1">
+        <label for="one">1</label>
+        
+        <input type="radio" name="rate" id="two" value="2">
+        <label for="two">2</label>
+
+        <input type="radio" name="rate" id="three" value="3">
+        <label for="three">3</label>
+
+        <input type="radio" name="rate" id="four" value="4">
+        <label for="four">4</label>
+
+        <input type="radio" name="rate" id="five" value="5">
+        <label for="five">5</label>
+
+        <input type="radio" name="rate" id="six" value="6">
+        <label for="six">6</label>
+
+        <input type="radio" name="rate" id="seven" value="7">
+        <label for="seven">7</label>
+
+        <input type="radio" name="rate" id="eight" value="8">
+        <label for="eight">8</label>
+
+        <input type="radio" name="rate" id="nine" value="9">
+        <label for="nine">9</label>
+
+        <input type="radio" name="rate" id="ten" value="10">
+        <label for="ten">10</label>
+      </div>
+
+      <div id="text">
+        <label class="textarea">Deixe seu comentário:</label>
+        <textarea name="notes" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+        <p id="counter">500</p>
+      </div>
+
+      <div id="agreement-checkbox">
+        <div>
+          <label id="label-infos">Você concorda com o uso das informações acima?</label>
+          <input type="checkbox" name="" id="agreement">
+        </div>
+        <button type="submit" id="submit-btn" disabled>Enviar</button>
+      </div>
+    </form>
+
+    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo">
+  </main>
+
+  <footer>
+    <h3>Direitos reservados à Trybewarts©</h3>
+    <p>
+      Coded by
+      <a href="https://github.com/wanlucas">Wan</a>,
+      <a href="https://github.com/lucasrodrigges">Lucas</a> &
+      <a href="https://github.com/miguel-inacio">Miguel</a>.
+    </p>
+  </footer>
+
+  <section id="letter">
+    <img id="letter-logo" src="images/trybewarts.svg">
+    <h2 id="letter-title">ESCOLA <span>de</span> MAGIA <br>
+    <span>e</span> BRUXARIA <span>de</span> TRYBEWARTS</h2>
+
+    <ul id="form-data">
+      <li>Nome: <span id="name"></span> <span id="lastname"></span></li>
+      <li>Email: <span id="email"></span></li>
+      <li>Casa: <span id="home"></span></li>
+      <li>Família: <span id="family"></span></li>
+      <li>Matérias: <span id="contents"></span></li>
+      <li>Avaliação: <span id="rate"></span></li>
+      <li>Observações: <span id="notes"></span></li>
+    </ul>
+
+    <p id="letter-text">
+      Prezado <span id="name"></span>, <br>
+
+      temos o prazer de informar de você foi aceito na escola de magia e bruxaria de Trybewarts. <br>
+      atenciosamente, Minerva McGonagall.
+    </p>
+
+    <p class="letter-footer">
+      Escola de magia de bruxaria de Trybewarts <br>
+      diretor: Albus Dumbledore.
+    </p>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>

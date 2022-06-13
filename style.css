@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Amatic+SC:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -261,6 +263,7 @@ input:hover + .option {
   position: absolute;
   inset: 0;
   text-align: center;
+  font-family: Acme, sans-serif;
   margin: auto;
   width: 300px;
   height: 400px;
@@ -283,7 +286,8 @@ input:hover + .option {
 }
 
 #letter-tytle {
-  font-size: 18px;
+  font-family: Amatic SC, cursive;
+  font-size: 24px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -299,7 +303,7 @@ input:hover + .option {
 .letter-footer {
   position: absolute;
   text-align: left;
-  bottom: 5px;
+  bottom: 12px;
   font-size: 8px;
 }
 

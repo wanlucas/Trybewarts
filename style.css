@@ -257,28 +257,50 @@ input:hover + .option {
   font-size: 15px;
 }
 
-#card {
+#letter {
   position: absolute;
   inset: 0;
+  text-align: center;
   margin: auto;
   width: 300px;
   height: 400px;
   visibility: hidden;
-  text-align: center;
   padding: 12px;
   color: black;
-  background: radial-gradient(rgb(240, 226, 169), rgb(202, 196, 140));
+  background: radial-gradient(rgb(240, 226, 169), rgb(177, 170, 110));
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.4);
 }
 
-#card-logo {
+#letter-logo {
   width: 30%;
 }
 
 #form-data {
   text-align: left;
-  font-size: 10px;
+  font-size: 12px;
   list-style: none;
+  margin: 10px 0;
+}
+
+#letter-tytle {
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#letter-tytle span {
+  font-size: 10px;
+}
+
+#letter-text {
+  font-size: 10px;
+  text-align: left;
+}
+
+.letter-footer {
+  position: absolute;
+  text-align: left;
+  bottom: 5px;
+  font-size: 8px;
 }
 
 footer {
